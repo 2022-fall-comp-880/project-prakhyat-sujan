@@ -1,5 +1,3 @@
-
-=======
 ## INTRODUCTION
 
 * This project aims to reposses the players name of the given particular skills 
