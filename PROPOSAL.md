@@ -1,6 +1,6 @@
 # Data analysis of Cricket players
 
-**Author**: Sujan Varma & Sai Prakyath 
+**Author**: Sujan Varma & Sai Prakhyat Bommana
 **Date**: 11/30/2022
 
 
