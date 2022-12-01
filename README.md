@@ -15,3 +15,19 @@
 * https://www.kaggle.com/datasets/harsha547/indian-premier-league-csv-dataset?select=Player.csv_
 
 
+<<<<<<< HEAD
+=======
+## INTRODUCTION
+
+* This project aims to reposses the players name of the given particular skills 
+and the personal information(i.e Country, Date of birth, Player ID) from the given dataset.
+
+## MOTIVATION
+
+* While there are many players from various countries across the world playing cricket.we make it 
+easy to analyse the skills and given data such as origin country, player date of birth, and there ID,
+From the given dataset.
+
+
+ 
+>>>>>>> 6fc3e1784adef17acf6dba829ca070bb1dd1d6ad
