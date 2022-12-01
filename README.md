@@ -12,5 +12,6 @@
   Bowling skills, DOB and Country of 524 players.
 * The total dataset size is of 738kb, but we are taking players dataset which
   is 32kb in size.
+* https://www.kaggle.com/datasets/harsha547/indian-premier-league-csv-dataset?select=Player.csv_
 
 
