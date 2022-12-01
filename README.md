@@ -1,6 +1,4 @@
- README-prakhyat
-* Checking requirements for the project.
-=======
-## Initial testing
-## Creating branch
- main
+
+# Data analysis for cricket player from 2008 to 2022 
+
+ 
