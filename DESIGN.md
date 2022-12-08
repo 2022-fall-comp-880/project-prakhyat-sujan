@@ -6,9 +6,9 @@ This is the main file for the application. It contains a series of functions and
 
 ### Main Class
 
-- `read()` method reads the csv file as a list of lists and store in `df` variable.
-- `get_data()` method returns the above `REF` variable.
-- 
+- `read()` method reads the csv file as a list of lists and store in `ref` variable.
+- `get_data()` method returns the above `ref` variable.
+
 ### Who are the players with right arm medium as bowling skill within the limit provided?
 
 - Under `Right_Arm_Medium` class `get()` method answers this query.
