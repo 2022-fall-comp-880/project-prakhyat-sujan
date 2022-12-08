@@ -18,9 +18,9 @@ analyse the data and makes easy to fetch the details of the player by the given 
 
 ### Who are the players with right arm medium as bowling skill from player id 1-100?
 
-### What are the skills(Bowling & Batting skill) of given player name?
+### count of right hand and left hand batsmen from each count?
 
-### What is the players date of birth and country?
+### Who are the players and their country with batting skill (right hand) and bowling skill as (right arm off break) Born between 1980-1990?
 
 
 
