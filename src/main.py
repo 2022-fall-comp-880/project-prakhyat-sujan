@@ -119,7 +119,6 @@ if __name__ == "__main__":
     count_batsmen = CountBatsmen(ref)
     print("\nCount of left and right hand batsmen by country:")
     print(count_batsmen.get())
-
     main = Main("../data/all.csv")
     ref = main.get_data()
     inb = IndianNoBowling(ref)
