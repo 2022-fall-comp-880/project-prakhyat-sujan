@@ -24,7 +24,7 @@ class count_batsmen:
         return output
 
 
-class right_arm_medium:
+class Right_Arm_Medium:
     """Players with right arm medium as bowling skills."""
 
     def __init__(self, ref) -> None:
@@ -113,7 +113,7 @@ if __name__ == "__main__":
     path = os.path.dirname(__file__) + "/../data/all.csv"
     main = Main(path)
     ref = main.get_data()
-    ram = right_arm_medium(ref)
+    ram = Right_Arm_Medium(ref)
     print("\nPlayers with right arm medium as bowling skill:")
     print(ram.get(limit=100))
     count_batsmen = count_batsmen(ref)
