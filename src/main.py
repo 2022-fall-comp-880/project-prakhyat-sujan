@@ -1,6 +1,6 @@
 
 """
-main.py file to answer the queries for the Unicorn dataset
+main.py file to answer the queries for the ipl dataset
 """
 
 
@@ -68,8 +68,8 @@ class Players:
         for row in self.ref:
             if row[2] != 'NULL':
                 dob = int(row[2].split("-")[-1])
-                if (row[4] == "Right-arm offbreak") and (row[3] == "Right_Hand"
-                ) and (80 < dob < 90):
+                if (row[4] == "Right-arm offbreak") and\
+                    (row[3] == "Right_Hand") and (80 < dob < 90):
                     result.add((row[1], row[-3]))
         return result
 
