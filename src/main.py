@@ -34,7 +34,7 @@ class Right_Arm_Medium:
         self.ref = ref
 
     def get(self, limit: int):
-        """Return the player name with right arm medium as bowling skill.
+        """Return the player name with right arm medium as bowling skills.
         """
         output = []
         for row in self.ref[:limit]:
