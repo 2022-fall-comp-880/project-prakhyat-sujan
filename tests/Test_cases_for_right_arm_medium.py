@@ -1,6 +1,6 @@
 import unittest
 import os
-from apps.main import Main, Right_Arm_Medium
+from src.main import Main, Right_Arm_Medium
 
 
 class TestRightArmMedium(unittest.TestCase):
