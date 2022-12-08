@@ -28,7 +28,7 @@ class Count_Batsmen:
 
 
 class Right_Arm_Medium:
-    """Players with right arm medium as bowling skill."""
+    """Players with right arm medium as bowling skills."""
 
     def __init__(self, ref) -> None:
         self.ref = ref
