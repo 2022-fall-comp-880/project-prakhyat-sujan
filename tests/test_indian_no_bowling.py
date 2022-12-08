@@ -1,6 +1,6 @@
 import unittest
 import os
-from src.main import Main, Indian_No_Bowling
+from src.main import Main, IndianNoBowling
 
 
 class TestIndianNoBowling(unittest.TestCase):
@@ -10,11 +10,11 @@ class TestIndianNoBowling(unittest.TestCase):
         """Create Tasks objects for the three testing cases."""
         data_dir = os.path.dirname(__file__) + "/../data"
         ref_10 = Main(f"{data_dir}/ten.csv").get_data()
-        self.tasks_10 = Indian_No_Bowling(ref_10)
+        self.tasks_10 = IndianNoBowling(ref_10)
         ref_50 = Main(f"{data_dir}/fifty.csv").get_data()
-        self.tasks_50 = Indian_No_Bowling(ref_50)
+        self.tasks_50 = IndianNoBowling(ref_50)
         ref = Main(f"{data_dir}/all.csv").get_data()
-        self.tasks_all = Indian_No_Bowling(ref)
+        self.tasks_all = IndianNoBowling(ref)
 
     def test_multiple_entries(self):
         """Test case 1 using all.csv."""
