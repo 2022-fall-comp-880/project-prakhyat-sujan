@@ -9,12 +9,12 @@ class TestIndianNoBowling(unittest.TestCase):
     def setUp(self):
         """Create Tasks objects for the three testing cases."""
         data_dir = os.path.dirname(__file__) + "/../data"
-        df_10 = Main(f"{data_dir}/ten.csv").get_data()
-        self.tasks_10 = Indian_No_Bowling(df_10)
-        df_50 = Main(f"{data_dir}/fifty.csv").get_data()
-        self.tasks_50 = Indian_No_Bowling(df_50)
-        df = Main(f"{data_dir}/all.csv").get_data()
-        self.tasks_all = Indian_No_Bowling(df)
+        ref_10 = Main(f"{data_dir}/ten.csv").get_data()
+        self.tasks_10 = Indian_No_Bowling(ref_10)
+        ref_50 = Main(f"{data_dir}/fifty.csv").get_data()
+        self.tasks_50 = Indian_No_Bowling(ref_50)
+        ref = Main(f"{data_dir}/all.csv").get_data()
+        self.tasks_all = Indian_No_Bowling(ref)
 
     def test_multiple_entries(self):
         """Test case 1 using all.csv."""
