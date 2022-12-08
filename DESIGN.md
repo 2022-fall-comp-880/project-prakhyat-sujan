@@ -22,6 +22,18 @@ This is the main file for the application. It contains a series of functions and
 - Create a `output` dictionary with country as keys and count of right hand and left hand batsmen as values.
 - Once the all the players are looped return the `output`.
 
+## Test Cases
+
+## `test_count_batsmen.py`
+
+- Contains three test cases for three data files `all.csv`, `ten.csv`, `fifty.csv`
+- Test cases for testing the `get()` method for class `Count_Batsmen`.
+
+## `test_right_arm_medium.py`
+
+- Contains three test cases for three data files `all.csv`, `ten.csv`, `fifty.csv`
+- Test cases for testing the `get()` method for class `Right_Arm_Medium`.
+
 
 
 
