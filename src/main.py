@@ -1,19 +1,16 @@
-"""
-main.py file to answer the queries for the Cricket dataset
-"""
-
 import os
 import csv
 
 
 class CountBatsmen:
     """Count of right hand and left hand batsmen from each country."""
+
     def __init__(self, ref) -> None:
         self.ref = ref
 
     def get(self):
-        """Return the count of left-hand & right hand batsmen of each country.
-        """
+        """Return the count of left-hand and right hand batsmen of each
+        country."""
         output = {}
         for row in self.ref:
             country = row[-3]
@@ -31,8 +28,7 @@ class RightArmMedium:
         self.ref = ref
 
     def get(self, limit: int):
-        """Return the player name with right arm medium as bowling skill.
-        """
+        """Return the player name with right arm medium as bowling skill."""
         output = []
         for row in self.ref[:limit]:
             if row[4] == "Right-arm medium":
@@ -42,7 +38,7 @@ class RightArmMedium:
 
 class Players:
     """Players and their country with batting skill (right hand)
-    and bowling skill as (right arm off-break) born between 1980-1990"""
+    and bowling skill as (right arm off-break) born between 1980-1990."""
 
     def __init__(self, ref) -> None:
         """Method for initializing the dataset."""
@@ -75,7 +71,7 @@ class IndianNoBowling:
     def get(self):
         """
         Checking the dataset and giving conditions for the test case.
-        If condition satisfies appending it to the result
+        If condition satisfies appending it to the result.
         :return: list[tuple[int, Any]]
         :rtype: int and string
         """
