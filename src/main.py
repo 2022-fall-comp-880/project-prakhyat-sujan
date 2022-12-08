@@ -2,6 +2,42 @@
 main.py file to answer the queries for the Unicorn dataset
 """
 
+ README-prakhyat
+import csv
+
+
+class Players:
+    """Players and their country with batting skill (right hand)
+    and bowling skill as (right arm off break) born between 1980-1990"""
+
+    def __init__(self, ref) -> None:
+        """Method for initializing the dataset."""
+        self.ref = ref
+
+    def get(self):
+        """
+        Checking the Dataset and giving conditions for Batting_skill,
+        Bowling_skill and DOB for required test cases.
+        :return: set[tuple[Player_name, Country]]
+        :rtype: string
+        """
+
+
+class Indian_No_Bowling:
+    """Indian players who have no bowling skills."""
+
+    def __init__(self, ref) -> None:
+        """Method for initializing dataset."""
+        self.ref = ref
+
+    def get(self):
+        """
+        Checking the dataset and giving conditions for the test case.
+        If condition satisfies appending it to the result
+        :return: list[tuple[int, Any]]
+        :rtype: int and string
+        """
+=======
 import os
 import csv
 
@@ -43,12 +79,17 @@ class Right_Arm_Medium:
         return output
 
 
+ main
 
 
 class Main:
     """Main class read the CSV and do feature engineering."""
 
     def __init__(self, file_path) -> None:
+ README-prakhyat
+        """Giving the path of the dataset."""
+=======
+ main
         self.file_path = file_path
         self.ref = self.read()
 
@@ -56,6 +97,10 @@ class Main:
         return self.ref
 
     def read(self):
+README-prakhyat
+        """Reading the dataset."""
+=======
+main
         ref = []
         with open(self.file_path, encoding="utf-8", newline="") as csv_file:
             reader = csv.reader(csv_file)
@@ -66,6 +111,15 @@ class Main:
 
 
 if __name__ == "__main__":
+ README-prakhyat
+    main = Main("../data/all.csv")
+    ref = main.get_data()
+    inb = Indian_No_Bowling(ref)
+    print("Indian players who have no bowling skills: ", inb.get())
+    players = Players(ref)
+    print("\nList of Players:")
+    print(players.get())
+=======
     path = os.path.dirname(__file__) + "/../data/all.csv"
     main = Main(path)
     ref = main.get_data()
@@ -78,4 +132,4 @@ if __name__ == "__main__":
 
 
 
-
+ main
