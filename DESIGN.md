@@ -1,18 +1,27 @@
-# 
+## COLLABORATORS : SUJAN VARMA & PRAKYATH BOMMANA
 
-There are 7 columns in the dataset providing the information about a player from the IPL games.
+## `main.py`
 
-1. **Player_Id**: The identifier of the player.
-2. **Player_Name**: The name of the player.
-3. **DOB**: Player's Date of Birth.
-4. **Batting_Hand**: Player's baiting hand.
-5. **Bowling_Skill**: Player's bowling skill if player bowls.
-6. **Country**: Country player plays to.
-7. **Is_Umpire**: Binary variable indicating if the player is umpire or not.
+This is the main file for the application. It contains a series of functions and methods to process the data.
 
-## Directories
+### Main Class
 
-1. `src` - Contains `main.py` file, which has five classes, `Main` and four other classes for the four tasks.
-2. `test` - Contains four test python files for respective four tasks. Each test file contain three test scenarios.
-3. `data` - Contains three datasets, `all.csv`, `ten.csv`, `fifty.csv`.
+- `read()` method reads the csv file as a list of lists and store in `df` variable.
+- `get_data()` method returns the above `REF` variable.
+- 
+### Who are the players with right arm medium as bowling skill within the limit provided?
+
+- Under `Right_Arm_Medium` class `get()` method answers this query.
+- Limit the players data with the `limit` argument provided.
+- Filter out the players on **Bowling_Skill = Right-Arm medium** and store them in `output` variable.
+- Once the all the players are looped return the `output`.
+
+### Count of right hand and left hand batsmen from each country?
+
+- Under `Count_Batsmen` class `get()` method answers this query.
+- Create a `output` dictionary with country as keys and count of right hand and left hand batsmen as values.
+- Once the all the players are looped return the `output`.
+
+
+
 
