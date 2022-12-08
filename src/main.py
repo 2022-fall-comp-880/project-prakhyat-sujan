@@ -1,18 +1,18 @@
-
 """
 main.py file to answer the queries for the Cricket dataset
 """
 
 import os
+import csv
 
-class Count_Batsmen:
+
+class count_batsmen:
     """Count of right hand and left hand batsmen from each country."""
-
     def __init__(self, ref) -> None:
         self.ref = ref
 
     def get(self):
-        """Return the count of lefthand and right hand batsmen of each country.
+        """Return the count of left-hand & right hand batsmen of each country.
         """
         output = {}
         for row in self.ref:
@@ -24,7 +24,7 @@ class Count_Batsmen:
         return output
 
 
-class Right_Arm_Medium:
+class right_arm_medium:
     """Players with right arm medium as bowling skills."""
 
     def __init__(self, ref) -> None:
@@ -40,9 +40,6 @@ class Right_Arm_Medium:
         return output
 
 
-
-import csv
-
 class Players:
     """Players and their country with batting skill (right hand)
     and bowling skill as (right arm off-break) born between 1980-1990"""
@@ -53,7 +50,7 @@ class Players:
 
     def get(self):
         """
-        Checking the Dataset and giving conditions for Batting_skill,
+        Checking the Dataset and giving conditions for Batting_skill.
         Bowling_skill and DOB for required test cases.
         :return: set[tuple[Player_name, Country]]
         :rtype: string
@@ -68,7 +65,7 @@ class Players:
         return result
 
 
-class Indian_No_Bowling:
+class indian_no_bowling:
     """Indian players who have no bowling skills."""
 
     def __init__(self, ref) -> None:
@@ -89,12 +86,10 @@ class Indian_No_Bowling:
         return result
 
 
-
 class Main:
     """Main class read the CSV and do feature engineering."""
 
     def __init__(self, file_path) -> None:
-
         """Giving the path of the Dataset."""
 
         self.file_path = file_path
@@ -115,24 +110,20 @@ class Main:
 
 
 if __name__ == "__main__":
-
     path = os.path.dirname(__file__) + "/../data/all.csv"
     main = Main(path)
     ref = main.get_data()
-    ram = Right_Arm_Medium(ref)
+    ram = right_arm_medium(ref)
     print("\nPlayers with right arm medium as bowling skill:")
-    print(ram.get(limit = 100))
-    count_batsmen = Count_Batsmen(ref)
+    print(ram.get(limit=100))
+    count_batsmen = count_batsmen(ref)
     print("\nCount of left and right hand batsmen by country:")
     print(count_batsmen.get())
 
     main = Main("../data/all.csv")
     ref = main.get_data()
-    inb = Indian_No_Bowling(ref)
+    inb = indian_no_bowling(ref)
     print("Indian players who have no bowling skills: ", inb.get())
     players = Players(ref)
     print("\nList of Players:")
     print(players.get())
-
-
-
