@@ -7,7 +7,7 @@ class TestCountBatsmen(unittest.TestCase):
     """Test Count_Batsmen's get() method."""
 
     def setUp(self):
-        """Create Tasks objects for the three testing cases."""
+        """Create Tasks objects for the three test cases."""
         data_dir = os.path.dirname(__file__) + "/../data"
         ref_10 = Main(f"{data_dir}/ten.csv").get_data()
         self.tasks_10 = Count_Batsmen(ref_10)
