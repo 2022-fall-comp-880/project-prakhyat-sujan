@@ -6,7 +6,7 @@ import os
 import csv
 
 
-class Count_batsmen:
+class CountBatsmen:
     """Count of right hand and left hand batsmen from each country."""
     def __init__(self, ref) -> None:
         self.ref = ref
@@ -24,7 +24,7 @@ class Count_batsmen:
         return output
 
 
-class Right_arm_medium:
+class RightArmMedium:
     """Players with right arm medium as bowling skills."""
 
     def __init__(self, ref) -> None:
@@ -65,7 +65,7 @@ class Players:
         return result
 
 
-class Indian_no_bowling:
+class IndianNoBowling:
     """Indian players who have no bowling skills."""
 
     def __init__(self, ref) -> None:
@@ -113,16 +113,16 @@ if __name__ == "__main__":
     path = os.path.dirname(__file__) + "/../data/all.csv"
     main = Main(path)
     ref = main.get_data()
-    ram = Right_arm_medium(ref)
+    ram = RightArmMedium(ref)
     print("\nPlayers with right arm medium as bowling skill:")
     print(ram.get(limit=100))
-    count_batsmen = Count_batsmen(ref)
+    count_batsmen = CountBatsmen(ref)
     print("\nCount of left and right hand batsmen by country:")
     print(count_batsmen.get())
 
     main = Main("../data/all.csv")
     ref = main.get_data()
-    inb = Indian_no_bowling(ref)
+    inb = IndianNoBowling(ref)
     print("Indian players who have no bowling skills: ", inb.get())
     players = Players(ref)
     print("\nList of Players:")
