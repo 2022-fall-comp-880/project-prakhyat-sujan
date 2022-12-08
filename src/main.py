@@ -75,7 +75,7 @@ class Players:
 
 
 class Indian_No_Bowling:
-    """Indian players who have no bowling skills."""
+    """Indian players who have no bowling skill."""
 
     def __init__(self, ref) -> None:
         """Method for initializing dataset."""
