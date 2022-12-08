@@ -1,6 +1,6 @@
 import unittest
 import os
-from src.main import Main, Indian_No_Bowling
+from apps.main import Main, Indian_No_Bowling
 
 
 class TestIndianNoBowling(unittest.TestCase):
