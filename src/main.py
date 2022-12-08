@@ -1,14 +1,13 @@
 
 """
+
 main.py file to answer the queries for the ipl dataset
+=======
+main.py file to answer the queries for the Cricket dataset
+
 """
 
-
 import os
-
-
-
-
 
 class Count_Batsmen:
     """Count of right hand and left hand batsmen from each country."""
@@ -47,7 +46,6 @@ class Right_Arm_Medium:
 
 
 import csv
-
 
 class Players:
     """Players and their country with batting skill (right hand)
@@ -101,7 +99,6 @@ class Main:
 
     def __init__(self, file_path) -> None:
 
-
         """Giving the path of the Dataset."""
 
         self.file_path = file_path
@@ -111,9 +108,7 @@ class Main:
         return self.ref
 
     def read(self):
-
         """Reading the dataset."""
-
         ref = []
         with open(self.file_path, encoding="utf-8", newline="") as csv_file:
             reader = csv.reader(csv_file)
@@ -134,9 +129,6 @@ if __name__ == "__main__":
     count_batsmen = Count_Batsmen(ref)
     print("\nCount of left and right hand batsmen by country:")
     print(count_batsmen.get())
-
-
-
 
     main = Main("../data/all.csv")
     ref = main.get_data()
