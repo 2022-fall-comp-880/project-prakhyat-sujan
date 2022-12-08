@@ -1,4 +1,4 @@
-# IPL Dataset
+# 
 
 There are 7 columns in the dataset providing the information about a player from the IPL games.
 
