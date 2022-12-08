@@ -1,6 +1,6 @@
 import unittest
 import os
-from apps.main import Main, Players
+from src.main import Main, Players
 
 
 class TestPlayers(unittest.TestCase):
