@@ -74,7 +74,8 @@ class TestRightArmMedium(unittest.TestCase):
     def test_ten_entries(self):
         """Test case 3 using ten.csv with ten rows."""
         actual_result = self.tasks_10.get(100)
-        expected_result = ["SC Ganguly", "BB McCullum", "RT Ponting", "V Kohli"]
+        expected_result = ['SC Ganguly', 'BB McCullum', 'RT Ponting',
+                           'V Kohli']
         self.assertEqual(actual_result, expected_result)
 
 
