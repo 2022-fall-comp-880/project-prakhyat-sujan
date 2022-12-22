@@ -97,11 +97,11 @@ class Main:
         self.ref = self.read()
 
     def get_data(self):
-        """Initialize method to get data"""
+        """Initialize method to get data."""
         return self.ref
 
     def read(self):
-        """Method to r  ead the dataset."""
+        """Read the dataset."""
         ref = []
         with open(self.file_path, encoding="utf-8", newline="") as csv_file:
             reader = csv.reader(csv_file)
