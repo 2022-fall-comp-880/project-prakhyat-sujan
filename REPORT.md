@@ -30,10 +30,10 @@
      umpire or not.
 
 ## Questions
-1.Who are the players with right arm medium as bowling skill from player id 1-100?
-2.How many right-hand and left-hand batsman in each country?
-3. Who are the Indian players with no bowling skills? 
-4. Name the players and country with batting skill right hand and bowling 
+* Who are the players with right arm medium as bowling skill from player id 1-100?
+* How many right-hand and left-hand batsman in each country?
+* Who are the Indian players with no bowling skills? 
+* Name the players and country with batting skill right hand and bowling 
      skill as right arm off-break born between 1980-1990?
 
 ## 2. Approach:
@@ -58,17 +58,14 @@
 •	Create a `output` dictionary with country as keys and count of right hand and left hand batsmen as values.
 •	Once the all the players are looped return the `output
 
-
-> 
-> 
-> 1. **Question 1:**
+>  **Question 3:**
 > * Under the `Indian_No_Bowling` class, the `get()` method answers this query.
 > * Filter out the players on **Country = India and Bowling_Skill = NULL** and
     store the player's ID and Name as a tuple in the `result` variable.
 Once all the players are looped, return the `result.`
 > 
 > 
-> 2. **Question 2:**
+>  **Question 4:**
 > * Under the `Players` class, the `get()` method answers this query.
 > * Filter out the players on **Bowling_Skill = Right-Arm off-break, 
     Bating_Skill = Right_Hand, 80 < DOB < 90** and store the player's name and 
@@ -114,8 +111,8 @@ Once all the players are looped, return the `result.`
 > * Set of tuples, where tuples have Player_name and Country both as a string.
 > * **Result:** set[tuple[Player_name, Country]]
 
-1.class RightArmMedium: The output of this method is a list. The list are the players with right arm medium as bowling skill.
-2.class CountBatsmen: The output of this method is a dictionary. The keys of the dictionary are the country and the values are the count of the players.
+* 1.class RightArmMedium: The output of this method is a list. The list are the players with right arm medium as bowling skill.
+* 2.class CountBatsmen: The output of this method is a dictionary. The keys of the dictionary are the country and the values are the count of the players.
 
 
 ## Evaluation
