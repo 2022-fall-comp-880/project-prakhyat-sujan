@@ -1,6 +1,6 @@
 import unittest
 import os
-from src.main import Main, Right_Arm_Medium
+from src.main import Main, RightArmMedium
 
 
 class TestRightArmMedium(unittest.TestCase):
@@ -10,11 +10,11 @@ class TestRightArmMedium(unittest.TestCase):
         """Create Tasks objects for the three testing cases."""
         data_dir = os.path.dirname(__file__) + "/../data"
         ref_10 = Main(f"{data_dir}/ten.csv").get_data()
-        self.tasks_10 = Right_Arm_Medium(ref_10)
+        self.tasks_10 = RightArmMedium(ref_10)
         ref_50 = Main(f"{data_dir}/fifty.csv").get_data()
-        self.tasks_50 = Right_Arm_Medium(ref_50)
+        self.tasks_50 = RightArmMedium(ref_50)
         ref = Main(f"{data_dir}/all.csv").get_data()
-        self.tasks_all = Right_Arm_Medium(ref)
+        self.tasks_all = RightArmMedium(ref)
 
     def test_multiple_entries(self):
         """Test case 1 using all.csv."""
@@ -74,7 +74,8 @@ class TestRightArmMedium(unittest.TestCase):
     def test_ten_entries(self):
         """Test case 3 using ten.csv with ten rows."""
         actual_result = self.tasks_10.get(100)
-        expected_result = ["SC Ganguly", "BB McCullum", "RT Ponting", "V Kohli"]
+        expected_result = ['SC Ganguly', 'BB McCullum', 'RT Ponting',
+                           'V Kohli']
         self.assertEqual(actual_result, expected_result)
 
 
