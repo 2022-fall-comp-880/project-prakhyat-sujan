@@ -1,1 +1,1 @@
-"""Test method"""
+"""Test method."""
