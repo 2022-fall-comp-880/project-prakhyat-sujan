@@ -8,11 +8,14 @@ class CountBatsmen:
     """Count of right hand and left hand batsmen from each country."""
 
     def __init__(self, ref) -> None:
+        """Initializing the special method __init__ and a paramter for
+        Datset. """
         self.ref = ref
 
     def get(self):
         """Return the count of left-hand and right hand batsmen of each
         country."""
+
         output = {}
         for row in self.ref:
             country = row[-3]
@@ -57,8 +60,7 @@ class Players:
         for row in self.ref:
             if row[2] != 'NULL':
                 dob = int(row[2].split("-")[-1])
-                if (row[4] == "Right-arm offbreak") and \
-                    (row[3] == "Right_Hand") and (80 < dob < 90):
+                if (row[4] == "Right-arm offbreak") and (row[3] == "Right_Hand") and (80 < dob < 90):
                     result.add((row[1], row[-3]))
         return result
 
