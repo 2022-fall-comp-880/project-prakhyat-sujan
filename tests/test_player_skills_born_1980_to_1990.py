@@ -1,3 +1,4 @@
+"""Import all the required modules."""
 import unittest
 import os
 from src.main import Main, Players
