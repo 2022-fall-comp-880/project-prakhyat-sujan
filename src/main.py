@@ -77,6 +77,7 @@ class IndianNoBowling:
         :return: list[tuple[int, Any]]
         :rtype: int and string
         """
+
         result = []
         for row in self.ref:
             if row[5] == "India" and row[4] == "NULL":
