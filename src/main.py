@@ -18,11 +18,11 @@ class CountBatsmen:
     """Count of right hand and left hand batsmen from each country."""
 
     def __init__(self, ref) -> None:
+        """Use method __init__ to initialize and a parameter for Dataset."""
         self.ref = ref
 
     def get(self):
-        """Return the count of left-hand and right hand batsmen of each
-        country."""
+        """Return the count of left and right hand batsmen of each country."""
         output = {}
         for row in self.ref:
             country = row[-3]
@@ -37,6 +37,7 @@ class RightArmMedium:
     """Players with right arm medium as bowling skills."""
 
     def __init__(self, ref) -> None:
+        """Use method __init__ to initialize and a parameter for Dataset."""
         self.ref = ref
 
     def get(self, limit: int):
@@ -49,16 +50,19 @@ class RightArmMedium:
 
 
 class Players:
-    """Players and their country with batting skill (right hand)
-    and bowling skill as (right arm off-break) born between 1980-1990."""
+    """Players and their country with batting skill (right hand).
+
+    bowling skill as (right arm off-break) born between 1980-1990.
+    """
 
     def __init__(self, ref) -> None:
-        """Method for initializing the dataset."""
+        """Initialize the dataset."""
         self.ref = ref
 
     def get(self):
         """
-        Checking the Dataset and giving conditions for Batting_skill.
+        Check the Dataset and giving conditions for Batting_skill.
+
         Bowling_skill and DOB for required test cases.
         :return: set[tuple[Player_name, Country]]
         :rtype: string
@@ -85,7 +89,7 @@ class IndianNoBowling:
     """Indian players who have no bowling skills."""
 
     def __init__(self, ref) -> None:
-        """Method for initializing dataset."""
+        """Initialize the dataset."""
         self.ref = ref
 
     def get(self):
@@ -107,16 +111,16 @@ class Main:
     """Main class read the CSV and do feature engineering."""
 
     def __init__(self, file_path) -> None:
-        """Giving the path of the Dataset."""
-
+        """File path of the Dataset."""
         self.file_path = file_path
         self.ref = self.read()
 
     def get_data(self):
+        """Initialize method to get data."""
         return self.ref
 
     def read(self):
-        """Reading the dataset."""
+        """Read the dataset."""
         ref = []
         with open(self.file_path, encoding="utf-8", newline="") as csv_file:
             reader = csv.reader(csv_file)
