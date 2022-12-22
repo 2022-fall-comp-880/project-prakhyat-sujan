@@ -40,9 +40,9 @@ class RightArmMedium:
 
 
 class Players:
-    """Players and their country with batting skill (right hand).
-
-    And bowling skill as (right arm off-break) born between 1980-1990."""
+    """Players and their country with batting skill (right hand)
+    and bowling skill as (right arm off-break) born between 1980-1990.
+    """
 
     def __init__(self, ref) -> None:
         """Method for initializing the dataset."""
@@ -51,6 +51,7 @@ class Players:
     def get(self):
         """
         Checking the Dataset and giving conditions for Batting_skill.
+
         Bowling_skill and DOB for required test cases.
         :return: set[tuple[Player_name, Country]]
         :rtype: string
