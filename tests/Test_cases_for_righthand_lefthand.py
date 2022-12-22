@@ -1,7 +1,7 @@
 """Test methods."""
 import unittest
 import os
-from src.main import Main, Count_Batsmen
+from src.main import Main, CountBatsmen
 
 
 class TestCountBatsmen(unittest.TestCase):
@@ -11,11 +11,11 @@ class TestCountBatsmen(unittest.TestCase):
         """Create Tasks objects for the three testing cases."""
         data_dir = os.path.dirname(__file__) + "/../data"
         ref_10 = Main(f"{data_dir}/ten.csv").get_data()
-        self.tasks_10 = Count_Batsmen(ref_10)
+        self.tasks_10 = CountBatsmen(ref_10)
         ref_50 = Main(f"{data_dir}/fifty.csv").get_data()
-        self.tasks_50 = Count_Batsmen(ref_50)
+        self.tasks_50 = CountBatsmen(ref_50)
         ref = Main(f"{data_dir}/all.csv").get_data()
-        self.tasks_all = Count_Batsmen(ref)
+        self.tasks_all = CountBatsmen(ref)
 
     def test_multiple_entries(self):
         """Test case 1 using all.csv."""
