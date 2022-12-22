@@ -1,3 +1,4 @@
+"""Test methods."""
 import unittest
 import os
 from src.main import Main, Indian_No_Bowling
