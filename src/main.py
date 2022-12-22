@@ -8,13 +8,11 @@ class CountBatsmen:
     """Count of right hand and left hand batsmen from each country."""
 
     def __init__(self, ref) -> None:
-        """Initializing the special method __init__ and a paramter for
-        Datset. """
+        """Initializing the special method __init__ and paramter for Datset."""
         self.ref = ref
 
     def get(self):
-        """Return the count of left-hand and right hand batsmen of each
-        country."""
+        """Return the count of left and right hand batsmen of each country."""
 
         output = {}
         for row in self.ref:
