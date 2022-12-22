@@ -8,7 +8,7 @@ class CountBatsmen:
     """Count of right hand and left hand batsmen from each country."""
 
     def __init__(self, ref) -> None:
-        """Using method __init__ to initialize and a parameter for Dataset."""
+        """Use method __init__ to initialize and a parameter for Dataset."""
         self.ref = ref
 
     def get(self):
@@ -27,7 +27,7 @@ class RightArmMedium:
     """Players with right arm medium as bowling skills."""
 
     def __init__(self, ref) -> None:
-        """Using method __init__ to initialize and a parameter for Dataset."""
+        """Use method __init__ to initialize and a parameter for Dataset."""
         self.ref = ref
 
     def get(self, limit: int):
@@ -46,7 +46,7 @@ class Players:
     """
 
     def __init__(self, ref) -> None:
-        """Method for initializing the dataset."""
+        """Method to initialize the dataset."""
         self.ref = ref
 
     def get(self):
