@@ -62,3 +62,13 @@ Once all the players are looped, return the `result.`
     the country as a tuple in the `result` set variable.
 > * Once all the players are looped, return the `result.`
 
+## 3. Result:
+
+> 1. **Question 1:**
+> * List of tuples, where tuples have player id's as integers and Player names
+    as string.
+> * **Result:** list[tuple[int, str]]
+>
+> 2. **Question 2:**
+> * Set of tuples, where tuples have Player_name and Country both as a string.
+> * **Result:** set[tuple[Player_name, Country]]
