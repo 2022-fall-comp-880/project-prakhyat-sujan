@@ -81,7 +81,6 @@ class IndianNoBowling:
         :return: list[tuple[int, Any]]
         :rtype: int and string
         """
-
         result = []
         for row in self.ref:
             if row[5] == "India" and row[4] == "NULL":
@@ -94,15 +93,15 @@ class Main:
 
     def __init__(self, file_path) -> None:
         """Giving the path of the Dataset."""
-
         self.file_path = file_path
         self.ref = self.read()
 
     def get_data(self):
+        """Initialize method to get data"""
         return self.ref
 
     def read(self):
-        """Reading the dataset."""
+        """Method to r  ead the dataset."""
         ref = []
         with open(self.file_path, encoding="utf-8", newline="") as csv_file:
             reader = csv.reader(csv_file)
