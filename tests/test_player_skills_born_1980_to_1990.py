@@ -1,4 +1,4 @@
-"""Test methods."""
+"""Test method."""
 import unittest
 import os
 from src.main import Main, Players
