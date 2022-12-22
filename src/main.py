@@ -46,7 +46,7 @@ class Players:
     """
 
     def __init__(self, ref) -> None:
-        """Method to initialize the dataset."""
+        """Initialize the dataset."""
         self.ref = ref
 
     def get(self):
@@ -70,7 +70,7 @@ class IndianNoBowling:
     """Indian players who have no bowling skills."""
 
     def __init__(self, ref) -> None:
-        """Method for initializing dataset."""
+        """Initialize the dataset."""
         self.ref = ref
 
     def get(self):
@@ -92,7 +92,7 @@ class Main:
     """Main class read the CSV and do feature engineering."""
 
     def __init__(self, file_path) -> None:
-        """Giving the path of the Dataset."""
+        """File path of the Dataset."""
         self.file_path = file_path
         self.ref = self.read()
 
