@@ -40,8 +40,9 @@ class RightArmMedium:
 
 
 class Players:
-    """Players and their country with batting skill (right hand)
-    and bowling skill as (right arm off-break) born between 1980-1990."""
+    """Players and their country with batting skill (right hand).
+
+    And bowling skill as (right arm off-break) born between 1980-1990."""
 
     def __init__(self, ref) -> None:
         """Method for initializing the dataset."""
