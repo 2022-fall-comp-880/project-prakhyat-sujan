@@ -7,9 +7,9 @@ main.py file to answer the queries for the ipl dataset
 main.py file to answer the queries for the Cricket dataset
 
 """
-=======
+
 """Import all the required packages."""
-in
+
 import os
 import csv
 
@@ -70,8 +70,8 @@ class Players:
 
                 if (row[4] == "Right-arm offbreak") and\
                     (row[3] == "Right_Hand") and (80 < dob < 90):
-=======
-                if (row[4] == "Right-arm offbreak") and (row[3] == "Right_Hand") and (80 < dob < 90):
+
+                 if (row[4] == "Right-arm offbreak") and (row[3] == "Right_Hand") and (80 < dob < 90):
 
                     result.add((row[1], row[-3]))
         return result
@@ -80,7 +80,7 @@ class Players:
 
 class Indian_No_Bowling:
     """Indian players who have no bowling skill."""
-=======
+
 class IndianNoBowling:
     """Indian players who have no bowling skills."""
 
